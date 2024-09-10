@@ -1,15 +1,25 @@
 {
-    "name": "terraform-type-parser",
-    "version": "1.0.0",
-    "description": "A library to convert Terraform types to readable formats.",
-    "main": "src/converter.ts",
-    "scripts": {
-      "test": "tsc && jest"
-    },
-    "devDependencies": {
-      "typescript": "^4.0.0",
-      "jest": "^27.0.0",
-      "@types/jest": "^27.0.0"
-    }
+  "name": "terraform-type-parser",
+  "version": "1.0.0",
+  "description": "A library to convert Terraform types to readable formats.",
+  "main": "dist/converter.js",
+  "types": "dist/converter.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "jest": "^27.0.0",
+    "@types/jest": "^27.0.0",
+    "@types/node": "^18.0.0"
+  },
+  "dependencies": {},
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
-  
+}
