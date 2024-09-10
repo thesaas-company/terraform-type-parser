@@ -1,4 +1,4 @@
-import { TerraformTypeConverter } from '../src/TerraformTypeConverter';
+import { TerraformTypeConverter } from './converter';
 
 describe('TerraformTypeConverter', () => {
   test('converts list(object(...)) correctly', () => {
