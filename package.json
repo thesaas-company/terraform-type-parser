@@ -1,5 +1,5 @@
 {
-  "name": "terraform-type-parser",
+  "name": "@tqindia/terraform-type-parser",
   "version": "1.0.0",
   "description": "A library to convert Terraform types to readable formats.",
   "main": "dist/converter.js",
